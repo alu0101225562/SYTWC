@@ -1,0 +1,83 @@
+@import "mixin.scss", "variables.scss";
+
+.header {
+    @include center_styled;
+
+    max-height: 2rem;
+    @include marginY(4rem);
+
+    h1 {
+        @include h1;
+    }
+}
+
+.actionForm {
+    @include center_styled;
+    label {
+        @include label_styled;
+    }
+    input {
+        &:focus {
+            @include focus_input_styled;
+        }
+    }
+}
+
+%listSection {
+    display: flex;
+    justify-content: space-around;
+    @include paddingY(2rem);
+}
+
+%item {
+    display: block;
+    max-width: 15rem;
+    a {
+        font-size: $title-size;
+        text-decoration: none;
+        color: $primary-color;
+    }
+    p {
+        @include decription_styled;
+    }
+}
+
+.productSection {
+    @extend %listSection;
+    background-color: aqua;
+}
+
+.productItem {
+    @extend %item;
+}
+
+.clientSection {
+    @extend %listSection;
+    background-color: aquamarine;
+}
+
+.clientItem {
+    @extend %item;
+}
+
+.titles {
+    @include h2;
+    margin-top: 4rem;
+}
+
+.garanties {
+    @include center_styled;
+    background-color: cadetblue;
+    @include paddingY(2rem);
+    li {
+        @include decription_styled;
+        margin-top: 2rem;
+    }
+}
+
+.contactItem {
+    @include center_styled;
+    @include decription_styled;
+    font-size: $p-size;
+    background-color: bisque;
+}

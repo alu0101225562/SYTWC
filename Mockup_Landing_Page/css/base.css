@@ -1,0 +1,91 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.header h1 {
+  font-size: 4rem;
+  margin-left: 1rem;
+}
+
+.actionForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.actionForm label {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+}
+.actionForm input:focus {
+  outline: none !important;
+  border: 1px solid red;
+  box-shadow: 0 0 0;
+}
+
+.clientSection, .productSection {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.clientItem, .productItem {
+  display: block;
+  max-width: 15rem;
+}
+.clientItem a, .productItem a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #00A300;
+}
+.clientItem p, .productItem p {
+  font-size: 1rem;
+  color: #08313A;
+}
+
+.productSection {
+  background-color: aqua;
+}
+
+.clientSection {
+  background-color: aquamarine;
+}
+
+.titles {
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 4rem;
+}
+
+.garanties {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.garanties li {
+  font-size: 1rem;
+  color: #08313A;
+  margin-top: 2rem;
+}
+
+.contactItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #08313A;
+  font-size: 1rem;
+  background-color: bisque;
+}
+
+/*# sourceMappingURL=base.css.map */

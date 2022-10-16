@@ -1,0 +1,56 @@
+@import "variables.scss";
+
+@mixin center_styled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin h1 {
+    font-size: $h1-size;
+    margin-left: 1rem;
+}
+
+@mixin h2 {
+    font-size: $h2-size;
+    text-align: center;
+    text-decoration: underline;
+}
+
+@mixin label_styled {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: $font-stack;
+    font-size: $p-size;
+}
+
+@mixin focus_input_styled {
+    outline: none !important;
+    border: 1px solid red;
+    box-shadow: 0 0 0;
+}
+
+@mixin decription_styled {
+    font-size: $p-size;
+    color: $secondary-color;
+}
+
+@mixin paddingY ($rems) {
+    padding-top: $rems;
+    padding-bottom: $rems;
+}
+
+@mixin paddingX ($rems) {
+    padding-right: $rems;
+    padding-left: $rems;
+}
+
+@mixin marginY ($rems) {
+    margin-top: $rems;
+    margin-bottom: $rems;
+}
+
+@mixin marginX ($rems) {
+    margin-right: $rems;
+    margin-left: $rems;
+}
