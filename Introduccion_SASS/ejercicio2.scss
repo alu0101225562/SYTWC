@@ -1,0 +1,47 @@
+@mixin border-padding-style {
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.header {
+    background-color: #531946;
+    @include border-padding-style;
+
+    a {
+        color: #fff;
+
+        &:hover {
+            color: #095169;
+        }
+    }
+}
+
+.footer {
+    background-color: #30162B;
+    color: #fff;
+    @include border-padding-style;
+
+    a {
+        color: #095169;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.feature a {
+    background-color: #30162B;
+    color: #fff;
+    @include border-padding-style;
+
+    &:hover {
+        color: #531946;
+    }
+}
+
+.content {
+    background-color: #fff;
+    color: #222;
+    @include border-padding-style;
+}

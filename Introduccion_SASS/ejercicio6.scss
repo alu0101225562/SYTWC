@@ -1,0 +1,15 @@
+@mixin radius ($value) {
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    border-radius: $value;
+}
+
+.header {
+    @include radius(5px);
+    /* ... */
+}
+
+.footer {
+    @include radius(10px)
+    /* ... */
+}

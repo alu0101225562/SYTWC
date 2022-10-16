@@ -1,0 +1,40 @@
+$white: #fff;
+
+.header {
+    background-color: #531946;
+
+    a {
+        color: $white;
+
+        &:hover {
+            color: #095169;
+        }
+    }
+}
+
+.footer {
+    background-color: #30162B;
+    color: $white;
+
+    a {
+        color: #095169;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+.feature a {
+    background-color: #30162B;
+    color: $white;
+
+    &:hover {
+        color: #531946;
+    }
+}
+
+.content {
+    background-color: $white;
+    color: #222;
+}
